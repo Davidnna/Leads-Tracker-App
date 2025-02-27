@@ -3,20 +3,32 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="manifest" href="site.webmanifest">
-        <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-        <link rel="stylesheet" href="index.css">
+        <link rel="manifest" href="scripts/site.webmanifest">
+        <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+        <!-- <link rel="apple-touch-icon" sizes="180x180" href="https://i.postimg.cc/XNQ7Dpfp/apple-touch-icon.png"> -->
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+        <!-- <link rel="icon" type="image/png" sizes="32x32" href="https://i.postimg.cc/63h5KQFb/favicon-32x32.png"> -->
+        <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+        <!-- <link rel="icon" type="image/png" sizes="16x16" href="https://i.postimg.cc/vTH8ZssY/favicon-16x16.png"> -->
+        <!-- 
+            For sit.webmanifest
+            "src": "https://i.postimg.cc/6QnpHccX/android-chrome-192x192.png",
+            "src": "https://i.postimg.cc/NFJsyzs1/android-chrome-512x512.png",
+        -->
+        <link rel="stylesheet" href="styles/styles.css">
         <title>Leads Tracker App</title>
     </head>
-    <body>  
-        <label for="input-el">Enter URL:</label>
-        <input type="text" id="input-el" placeholder="https://google.com">
-        <button type="button" id="input-btn">SAVE INPUT</button>
-        <button type="button" id="delete-btn">DELETE ALL</button>
-        <ul id="ul-el">
-        </ul>
-        <script type="module" src="index.js"></script>
+    <body>
+        <main>
+            <!-- Input -->
+            <label for="input-el">Enter URL:</label>
+            <input type="text" id="input-el" placeholder="https://google.com">
+            <!-- Actions -->
+            <button type="button" id="input-btn">SAVE INPUT</button>
+            <button type="button" id="delete-btn">DELETE ALL</button>
+            <!-- Saved Links -->
+            <ul id="ul-el"></ul>
+        </main>
+        <script type="module" src="scripts/script.js"></script>
     </body>
 </html>

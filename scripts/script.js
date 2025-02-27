@@ -18,6 +18,7 @@ const inputBtn = document.getElementById("input-btn")
 const ulEl = document.getElementById("ul-el")
 const deleteBtn = document.getElementById("delete-btn")
 
+// Show Links
 function render(leads) {
     let listItems = ""
     for (let i = 0; i < leads.length; i++) {
@@ -32,6 +33,7 @@ function render(leads) {
     ulEl.innerHTML = listItems
 }
 
+// Retrieve Links
 onValue(referenceInDB, function (snapshot) {
     const snapshotDoesExist = snapshot.exists()
     if (snapshotDoesExist) {
@@ -41,11 +43,13 @@ onValue(referenceInDB, function (snapshot) {
     }
 })
 
+// Delete Links
 deleteBtn.addEventListener("dblclick", function() {
     remove(referenceInDB)
     ulEl.innerHTML = ""
 })
 
+// Save Links
 inputBtn.addEventListener("click", function() {
     push(referenceInDB, inputEl.value)
     inputEl.value = "" 
